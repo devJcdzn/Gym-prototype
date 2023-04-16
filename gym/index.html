@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Gym</title>
+</head>
+
+<body>
+   
+    <header class="header-content">
+
+
+        <div class="nav-bar">
+            <div class="logo">Gym<span class="logo-span">Pass</span></div>
+            <nav class="nav-links">
+                <ul>
+                    <li class="links"><a href="#home">Início</a></li>
+                    <li class="links"><a href="#about">Sobre</a></li>
+                    <li class="links"><a href="#plans">Planos</a></li>
+                    <li class="links"><a href="#contact">Contato</a></li>
+                </ul>
+                <button class="responsive-close"><ion-icon name="close-outline"></ion-icon></button>
+            </nav>
+        </div>
+    </header>
+    <div class="interactive-menu">
+        <div class="toggle" id="toggle">
+            <button class="btn-menu"><ion-icon name="grid-outline"></ion-icon></button>
+        </div>
+        <div class="logo-menu">
+            Gym<span class="logo-span">Pass</span>
+        </div>
+    </div>
+
+    <!-- Header -->
+
+    <!-- Home -->
+
+    <main>
+        <section class="home" id="home">
+            <div class="home-content">
+                <h1 class="home-title">A melhor opção para quem quer cuidar do corpo e da mente.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero similique, reiciendis magni optio a
+                    soluta ipsum
+                    debitis voluptate excepturi asperiores at nostrum vitae cumque nemo placeat inventore.
+                    Optio, eum quod?
+                </p>
+                <button class="cta-button">Agende sua aula!</button>
+
+            </div>
+        </section>
+
+        <!-- About -->
+
+        <section class="about" id="about">
+            <div class="about-content">
+                <h1 class="about-title">
+                    Sobre
+                </h1>
+                <div class="about-info">
+                    <p class="info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati
+                        amet nemo earum at nulla animi doloribus dolor, excepturi libero
+                        deserunt, provident asperiores quod, incidunt dolorem nesciunt.
+                        Dolores ut mollitia fugiat.</p>
+
+                    <div class="links-social">
+                        <div class="instagram">
+                            <a href="#" class="insta">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </a>
+                        </div>
+                        <div class="whatsapp">
+                            <a href="#" class="whats">
+                                <ion-icon name="logo-whatsapp"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Plans -->
+
+        <section class="plans" id="plans">
+            <div class="plans-content">
+                <h1 class="plans-title">Planos</h1>
+                <div class="card-plans">
+                    <div class="card">
+                        <h2 class="card-title">Diário</h2>
+
+                        <p class="decryption">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Placeat, perspiciatis aspernatur! Illo recusandae dolores
+                            dicta culpa architecto voluptatibus sequi fuga veniam,
+                            voluptate explicabo expedita corporis eos eveniet magni
+                            praesentium at?
+                        </p>
+
+                        <h2 class="card-title">R$ 9,99/Dia</h2>
+
+                        <a href="#" class="cta-button">Assine já</a>
+                    </div>
+                    <div class="card">
+                        <h2 class="card-title">Semanal</h2>
+
+                        <p class="decryption">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Placeat, perspiciatis aspernatur! Illo recusandae dolores
+                            dicta culpa architecto voluptatibus sequi fuga veniam,
+                            voluptate explicabo expedita corporis eos eveniet magni
+                            praesentium at?
+                        </p>
+
+                        <h2 class="card-title">R$29,99/Sem.</h2>
+
+                        <a href="#" class="cta-button">Assine já</a>
+                    </div>
+                    <div class="card">
+                        <h2 class="card-title">Mensal</h2>
+
+                        <p class="decryption">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Placeat, perspiciatis aspernatur! Illo recusandae dolores
+                            dicta culpa architecto voluptatibus sequi fuga veniam,
+                            voluptate explicabo expedita corporis eos eveniet magni
+                            praesentium at?
+                        </p>
+
+                        <h2 class="card-title">R$99,99/Mês</h2>
+
+                        <a href="#" class="cta-button">Assine já</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- contact -->
+
+        <section class="contact" id="contact">
+            <div class="contact-content">
+                <h1 class="contact-title">
+                    Contato
+                </h1>
+
+                <form  action="" name="contact-form" class="contact-form">
+
+                    <h1 class="contact-form-title">
+                        Entre em contato
+                    </h1>
+
+                    <label for="name">Nome:</label>
+                    <input type="text" id="nameid" 
+                    name="name"
+                    placeholder="Seu nome">
+                    <div id="checkout-name" class="check"></div>
+                    
+                    <label for="fone">Telefone:</label>
+                    <input type="tel" id= 'foneid' 
+                    placeholder="(xx)xxxxx-xxxx" name="fone">
+                    <div id="checkout-tel" class="check"></div>
+                    
+                    <label for="email">Email:</label> 
+                    <input type="email" name="email" id="emailid"
+                    placeholder="E-mail">
+                    <div id="checkout-email" class="check"></div>
+
+                    <label for="textarea">Sua mensagem:</label>
+                    <textarea cols="30" rows="10"></textarea>
+
+                    <input type="submit" class='send' 
+                     onclick="Send()" value= "Enviar"
+                    >
+
+
+                </form>
+            </div>
+        </section>
+
+
+
+
+
+    </main>
+
+    <footer>
+        <p>Todos os direitos reservados por <a href="#">Jean Carlos</a></p>
+        <p class="copy">Copyright: <span id="current-year"></span> © </p>
+    </footer>
+
+
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"> </script>
+    <script  nomodule  src = "https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js" > </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
